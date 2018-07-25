@@ -1,0 +1,150 @@
+*{
+	box-sizing: border-box; 
+	/* This makes the widths of elements more consistent
+		Full details here https://css-tricks.com/box-sizing/ */
+}
+
+body{
+	margin: 0px; /* Often browsers have a 5px margin by deafult*/
+	font-family: sans-serif;
+}
+
+h1{
+    font-size: 35px;
+}
+
+#start p{
+    font-size: 18px;
+    line-height: 150%;
+}
+
+#header h1{
+    font-size: 40px;
+    line-height: 150%;
+}
+
+#header p{
+    font-size: 18px;
+    line-height: 150%;
+}
+
+section{
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 50px;
+	padding-bottom: 20px;
+    line-height: 150%;
+}
+
+section a:link, a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+section a:hover{
+    text-decoration: none;
+    color: rgba(255,170,187);
+}
+
+
+#one{
+    padding-top: 60px;   
+}
+
+nav{
+    position: sticky;
+    top: 0;
+	width: 100%;
+	height: 60px;
+	background-color: rgba(255,231,235);
+}
+
+nav a{
+	float: left;
+	margin: 0px;
+    padding: 0 20px;
+	line-height: 60px;
+	margin-left: 1em;
+	margin-right: -1em;
+	text-decoration: none;
+}
+
+ nav h3{
+    float: left;
+	margin: 0px;
+	line-height: 60px;
+	margin-left: 1em;
+	margin-right: 0em;
+	text-decoration: none;
+}
+
+nav a:link, a:visited{
+    color: black;
+}
+
+nav a:hover{
+    color: white;
+    background-color: rgba(255,170,187, 0.7);
+	/*text-decoration: underline; /* Hover styles to let people know they can click it */
+}
+
+
+#start{
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(255,251,252);
+}
+
+#header{
+    position: static;
+    width: 100%;
+    min-height: 100vh;
+    left: 0;
+    top: 0;
+	background-color: rgba(255,170,187);
+}
+
+#headerContent{
+    color: white; /* more readable on an orange background */
+	padding-top: 120px;
+    margin: auto; 
+    max-width: 1000px;
+}
+
+
+/* Simple grid */
+.g-row{
+	width: 100%;
+	overflow: hidden;
+}
+
+.g-row img{
+    margin-top: 15px;
+    margin-bottom: 10px;
+	width: 100%; /*This makes all images in grids to be the size of their cell */
+}
+
+.g-50{
+	width: 50%;
+	float: left;
+}
+
+.g-30{
+	width: 30%;
+	float: left;
+}
+
+.g-70{
+	width: 70%;
+	float: left;
+}
+
+.show{
+	border: 1px solid blue;
+	padding: 2px;
+}
+
+.padded{
+	padding: 20px; /* I add this to cells to add a little padding*/
+}
